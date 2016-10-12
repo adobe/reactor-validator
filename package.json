@@ -1,0 +1,18 @@
+{
+  "name": "@reactor/extension-support-validator",
+  "version": "1.0.0",
+  "description": "Validates a Reactor extension package.",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@git.corp.adobe.com:reactor/extension-support-validator.git"
+  },
+  "author": {
+    "name": "DTM",
+    "email": "DTM-Engineering@adobe.com"
+  },
+  "dependencies": {
+    "@reactor/turbine-schemas": "^1.0.1",
+    "ajv": "^4.7.7"
+  }
+}
