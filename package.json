@@ -1,6 +1,6 @@
 {
   "name": "@reactor/extension-support-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validates a Reactor extension package.",
   "main": "lib/index.js",
   "repository": {
