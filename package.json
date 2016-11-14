@@ -12,7 +12,7 @@
     "email": "DTM-Engineering@adobe.com"
   },
   "dependencies": {
-    "@reactor/turbine-schemas": "^1.0.1",
+    "@reactor/turbine-schemas": "*",
     "ajv": "^4.7.7"
   }
 }
