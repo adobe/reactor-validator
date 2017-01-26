@@ -1,7 +1,7 @@
 {
-  "name": "@reactor/extension-support-validator",
+  "name": "@adobe/composer-validator",
   "version": "1.1.0",
-  "description": "Validates a Reactor extension package.",
+  "description": "Validates a Composer extension package.",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
     "email": "DTM-Engineering@adobe.com"
   },
   "dependencies": {
-    "@reactor/turbine-schemas": "*",
+    "@adobe/composer-turbine-schemas": "*",
     "ajv": "^4.7.7"
   }
 }
