@@ -1,11 +1,11 @@
-# extension-support-validator
+# @adobe/reactor-validator
 
 Validates an extension package.
 
 ## Usage
 
 ```javascript
-import validate from '@reactor/extension-support-validator';
+import validate from '@adobe/reactor-validator';
 
 const error = validate(require('./extension.json'));
 
