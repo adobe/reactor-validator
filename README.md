@@ -1,5 +1,6 @@
 # extension-support-validator
-Validates a Reactor extension package.
+
+Validates an extension package.
 
 ## Usage
 
