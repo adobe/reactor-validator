@@ -8,8 +8,9 @@
     "url": "git@git.corp.adobe.com:reactor/extension-support-validator.git"
   },
   "author": {
-    "name": "DTM",
-    "email": "DTM-Engineering@adobe.com"
+    "name": "Adobe Systems Incorporated",
+    "url": "http://adobe.com",
+    "email": "reactor@adobe.com"
   },
   "dependencies": {
     "@adobe/reactor-turbine-schemas": "*",
