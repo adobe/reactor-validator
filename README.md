@@ -1,6 +1,6 @@
 # @adobe/reactor-validator
 
-Validates an extension package.
+Validates a Launch extension package.
 
 ## Usage
 
