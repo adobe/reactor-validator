@@ -4,6 +4,8 @@
 
 Validates a Launch extension package.
 
+For more information regarding Launch, please visit our [product website](http://www.adobe.com/enterprise/cloud-platform/launch.html).
+
 ## Usage
 
 ```javascript
