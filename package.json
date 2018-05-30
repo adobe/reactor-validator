@@ -3,6 +3,9 @@
   "version": "1.2.0",
   "description": "Validates an Launch extension package.",
   "main": "lib/index.js",
+  "bin": {
+    "reactor-packager": "bin/index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:Adobe-Marketing-Cloud/reactor-validator.git"
