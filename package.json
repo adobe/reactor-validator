@@ -4,7 +4,7 @@
   "description": "Validates an Launch extension package.",
   "main": "lib/index.js",
   "bin": {
-    "reactor-packager": "bin/index.js"
+    "reactor-validator": "bin/index.js"
   },
   "repository": {
     "type": "git",
