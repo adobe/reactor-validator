@@ -17,7 +17,7 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
-    "@adobe/reactor-turbine-schemas": "^5.0.2",
+    "@adobe/reactor-turbine-schemas": "^5.0.3",
     "ajv": "^6.5.1"
   }
 }
