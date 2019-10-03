@@ -13,7 +13,7 @@ For more information about developing an extension for Launch, please visit our 
 
 ## Usage
 
-This tool is currently integrated and automatically executed within other tools that extension developers typically use, namely the [Launch Extension Sandbox](https://github.com/Adobe-Marketing-Cloud/reactor-sandbox) and [Launch Extension Packager](https://github.com/Adobe-Marketing-Cloud/reactor-packager). This is likely sufficient for most extension developers.
+This tool is currently integrated and automatically executed within other tools that extension developers typically use, namely the [Launch Extension Sandbox](https://github.com/adobe/reactor-sandbox) and [Launch Extension Packager](https://github.com/adobe/reactor-packager). This is likely sufficient for most extension developers.
 
 ### Running the Validator from the Command Line
 
