@@ -6,10 +6,10 @@ Launch, by Adobe, is a next-generation tag management solution enabling simplifi
 
 The extension validator helps extension developers validate that an extension package is well-structured. Namely, it verifies that:
 
-1. The extension has a [manifest](https://developer.adobelaunch.com/guides/extensions/extension-manifest/) (`extension.json`) matching the expected structure.
+1. The extension has a [manifest](https://experienceleague.adobe.com/docs/launch/using/extension-dev/manifest.html?lang=en#extension-dev) (`extension.json`) matching the expected structure.
 2. All referenced directories and files exist at the specified locations within the extension directory. 
 
-For more information about developing an extension for Launch, please visit our [extension development guide](https://developer.adobelaunch.com/guides/extensions/).  
+For more information about developing an extension for Launch, please visit our [extension development guide](https://experienceleague.adobe.com/docs/launch/using/extension-dev/overview.html#extension-dev).  
 
 ## Usage
 
@@ -17,11 +17,7 @@ This tool is currently integrated and automatically executed within other tools 
 
 ### Running the Validator from the Command Line
 
-Before running the validator, you must first have [Node.js](https://nodejs.org/en/) installed on your computer. Your npm version (npm comes bundled with Node.js) will need to be at least 5.2.0. You can check the installed version by running the following command from a command line:
-                                                                                                      
-```
-npm -v
-```
+Before running the validator, you must first have [Node.js](https://nodejs.org/en/) installed on your computer.
 
 Once Node.js is installed, run the validator by executing the following command from the command line within your extension's directory:
 
