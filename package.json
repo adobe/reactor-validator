@@ -19,5 +19,8 @@
   "dependencies": {
     "@adobe/reactor-turbine-schemas": "^9.1.0",
     "ajv": "^6.12.2"
+  },
+  "engines": {
+    "node": ">=12.13.0"
   }
 }
