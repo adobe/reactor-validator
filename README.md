@@ -1,19 +1,19 @@
-# Launch Extension Validator
+# Experience Platform Tags Extension Validator
 
 [![npm (scoped)](https://img.shields.io/npm/v/@adobe/reactor-validator.svg?style=flat)](https://www.npmjs.com/package/@adobe/reactor-validator)
 
-Launch, by Adobe, is a next-generation tag management solution enabling simplified deployment of marketing technologies. For more information regarding Launch, please visit our [product website](http://www.adobe.com/enterprise/cloud-platform/launch.html).
+Experience Platform Tags, by Adobe, is a next-generation tag management solution enabling simplified deployment of marketing technologies. For more information regarding Experience Platform Tags, please visit our [product website](http://www.adobe.com/enterprise/cloud-platform/launch.html).
 
 The extension validator helps extension developers validate that an extension package is well-structured. Namely, it verifies that:
 
-1. The extension has a [manifest](https://experienceleague.adobe.com/docs/launch/using/extension-dev/manifest.html?lang=en#extension-dev) (`extension.json`) matching the expected structure.
+1. The extension has a [manifest](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/manifest.html?lang=en) (`extension.json`) matching the expected structure.
 2. All referenced directories and files exist at the specified locations within the extension directory. 
 
-For more information about developing an extension for Launch, please visit our [extension development guide](https://experienceleague.adobe.com/docs/launch/using/extension-dev/overview.html#extension-dev).  
+For more information about developing an extension for Experience Platform Tags, please visit our [extension development guide](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html?lang=en).  
 
 ## Usage
 
-This tool is currently integrated and automatically executed within other tools that extension developers typically use, namely the [Launch Extension Sandbox](https://github.com/adobe/reactor-sandbox) and [Launch Extension Packager](https://github.com/adobe/reactor-packager). This is likely sufficient for most extension developers.
+This tool is currently integrated and automatically executed within other tools that extension developers typically use, namely the [Extension Sandbox Tool](https://github.com/adobe/reactor-sandbox) and [Extension Packager Tool](https://github.com/adobe/reactor-packager). This is likely sufficient for most extension developers.
 
 ### Running the Validator from the Command Line
 
