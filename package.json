@@ -1,6 +1,6 @@
 {
   "name": "@adobe/reactor-validator",
-  "version": "2.2.0-beta.0",
+  "version": "2.2.0",
   "description": "Validates an Launch extension package.",
   "main": "lib/index.js",
   "bin": {
