@@ -1,15 +1,15 @@
-# Experience Platform Tags Extension Validator
+# Adobe Experience Platform Tags Extension Validator
 
 [![npm (scoped)](https://img.shields.io/npm/v/@adobe/reactor-validator.svg?style=flat)](https://www.npmjs.com/package/@adobe/reactor-validator)
 
-Experience Platform Tags, by Adobe, is a next-generation tag management solution enabling simplified deployment of marketing technologies. For more information regarding Experience Platform Tags, please visit our [product website](http://www.adobe.com/enterprise/cloud-platform/launch.html).
+Adobe Experience Platform Tags is a next-generation tag management solution enabling simplified deployment of marketing technologies. For more information regarding Tags, please visit our [product website](http://www.adobe.com/enterprise/cloud-platform/launch.html).
 
 The extension validator helps extension developers validate that an extension package is well-structured. Namely, it verifies that:
 
 1. The extension has a [manifest](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/manifest.html?lang=en) (`extension.json`) matching the expected structure.
 2. All referenced directories and files exist at the specified locations within the extension directory. 
 
-For more information about developing an extension for Experience Platform Tags, please visit our [extension development guide](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html?lang=en).  
+For more information about developing an extension for Tags, please visit our [extension development guide](https://experienceleague.adobe.com/docs/experience-platform/tags/extension-dev/overview.html?lang=en).  
 
 ## Usage
 

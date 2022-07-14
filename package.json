@@ -1,7 +1,7 @@
 {
   "name": "@adobe/reactor-validator",
   "version": "2.2.0",
-  "description": "Validates an Launch extension package.",
+  "description": "Validates a Tags extension package.",
   "main": "lib/index.js",
   "bin": {
     "reactor-validator": "bin/index.js"
@@ -11,7 +11,7 @@
     "url": "git@github.com:adobe/reactor-validator.git"
   },
   "author": {
-    "name": "Adobe Systems",
+    "name": "Adobe",
     "url": "http://adobe.com",
     "email": "reactor@adobe.com"
   },
