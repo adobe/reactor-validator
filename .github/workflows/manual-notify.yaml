@@ -1,18 +1,19 @@
-name: CI notify
+name: Manual Notify
 
-# Only trigger, when the build workflow succeeded
 on:
-  workflow_run:
-    workflows: ['Node.js Package']
-    types:
-      - completed
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'The tag to publish to: latest | next'
+        required: true
+        default: 'latest'
 
 jobs:
   notify-on-success:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ inputs.tag == 'latest' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Get latest tag
         uses: oprypin/find-latest-tag@v1
         with:
