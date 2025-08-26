@@ -1,0 +1,11 @@
+{
+  "displayName": "base web files",
+  "name": "base-web-files",
+  "platform": "web",
+  "version": "1.0.0",
+  "description": "base web files",
+  "author": {
+    "name": "reactor"
+  },
+  "viewBasePath": "src/view/"
+}
