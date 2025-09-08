@@ -1,0 +1,11 @@
+{
+  "displayName": "base edge files",
+  "name": "base-edge-files",
+  "platform": "edge",
+  "version": "1.0.0",
+  "description": "base edge files",
+  "author": {
+    "name": "reactor"
+  },
+  "viewBasePath": "src/view/"
+}
