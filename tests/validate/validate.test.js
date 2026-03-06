@@ -64,5 +64,11 @@ describe('portable validate', () => {
       var fileList = ['src/view/.gitkeep'];
       expect(validate(manifest, fileList)).toContain('is not a file');
     });
+
+    it('returns an error when viewBasePath is set but no files exist under it', () => {
+      var manifest = fromJS(webManifest).toJS();
+      var fileList = ['extension.json'];
+      expect(validate(manifest, fileList)).toContain('is not a directory');
+    });
   });
 });
