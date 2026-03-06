@@ -53,9 +53,9 @@ describe('portable validate', () => {
 
     it('returns an error when viewBasePath is a file', () => {
       var manifest = fromJS(webManifest).toJS();
-      manifest.viewBasePath = 'src/view';
-      var fileList = ['src/view'];
-      expect(validate(manifest, fileList)).toContain('The referenced viewBasePath');
+      manifest.viewBasePath = 'src/view/config.html';
+      var fileList = ['src/view/config.html'];
+      expect(validate(manifest, fileList)).toBe('The referenced viewBasePath src/view/config.html is either not a directory or is empty.');
     });
 
     it('returns an error when a required file is missing', () => {
@@ -68,7 +68,7 @@ describe('portable validate', () => {
     it('returns an error when viewBasePath is set but no files exist under it', () => {
       var manifest = fromJS(webManifest).toJS();
       var fileList = ['extension.json'];
-      expect(validate(manifest, fileList)).toContain('The referenced viewBasePath');
+      expect(validate(manifest, fileList)).toBe('The referenced viewBasePath src/view/ is either not a directory or is empty.');
     });
   });
 });

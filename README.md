@@ -86,7 +86,7 @@ resolve: {
 }
 ```
 
-Alternatively, add `ajv@^8.12.0` as a direct dependency in your project so the alias is unnecessary.
+Alternatively, add `ajv` as a direct dependency in your project with the current version used here so the alias is unnecessary. However, this is very brittle. This project reserves the right to use a different version of `ajv` at any time.
 
 ## Contributing
 
