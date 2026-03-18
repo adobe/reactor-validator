@@ -70,5 +70,79 @@ describe('portable validate', () => {
       var fileList = ['extension.json'];
       expect(validate(manifest, fileList)).toBe('The referenced viewBasePath src/view/ is either not a directory or is empty.');
     });
+
+    it('returns an error when a web event libPath file is missing', () => {
+      var manifest = fromJS(webManifest).toJS();
+      manifest.events = [{
+        name: 'click',
+        displayName: 'Click',
+        libPath: 'src/lib/events/click.js',
+        schema: {}
+      }];
+      var fileList = ['src/view/.gitkeep'];
+      expect(validate(manifest, fileList)).toContain('is not a file');
+    });
+
+    it('returns an error when a web event viewPath HTML file is missing', () => {
+      var manifest = fromJS(webManifest).toJS();
+      manifest.events = [{
+        name: 'click',
+        displayName: 'Click',
+        libPath: 'src/lib/events/click.js',
+        schema: {},
+        viewPath: 'events/click.html'
+      }];
+      // libPath is present but viewPath HTML (src/view/events/click.html) is absent
+      var fileList = ['src/view/.gitkeep', 'src/lib/events/click.js'];
+      expect(validate(manifest, fileList)).toContain('is not a file');
+    });
+
+    it('returns undefined when web event libPath and viewPath HTML both exist', () => {
+      var manifest = fromJS(webManifest).toJS();
+      manifest.events = [{
+        name: 'click',
+        displayName: 'Click',
+        libPath: 'src/lib/events/click.js',
+        schema: {},
+        viewPath: 'events/click.html'
+      }];
+      var fileList = ['src/view/.gitkeep', 'src/lib/events/click.js', 'src/view/events/click.html'];
+      expect(validate(manifest, fileList)).toBeUndefined();
+    });
+
+    it('returns an error when an edge condition viewPath HTML file is missing', () => {
+      var manifest = fromJS(edgeManifest).toJS();
+      manifest.conditions = [{
+        name: 'has-value',
+        displayName: 'Has Value',
+        libPath: 'src/lib/conditions/has-value.js',
+        schema: {},
+        viewPath: 'conditions/has-value.html'
+      }];
+      // libPath is present but viewPath HTML (src/view/conditions/has-value.html) is absent
+      var fileList = ['src/view/.gitkeep', 'src/lib/conditions/has-value.js'];
+      expect(validate(manifest, fileList)).toContain('is not a file');
+    });
+
+    it('returns an error when a configuration viewPath HTML file is missing', () => {
+      var manifest = fromJS(webManifest).toJS();
+      manifest.configuration = {
+        viewPath: 'configuration.html',
+        schema: {}
+      };
+      // configuration.html joined with viewBasePath → src/view/configuration.html, which is absent
+      var fileList = ['src/view/.gitkeep'];
+      expect(validate(manifest, fileList)).toContain('is not a file');
+    });
+
+    it('returns undefined when configuration viewPath HTML file exists', () => {
+      var manifest = fromJS(webManifest).toJS();
+      manifest.configuration = {
+        viewPath: 'configuration.html',
+        schema: {}
+      };
+      var fileList = ['src/view/.gitkeep', 'src/view/configuration.html'];
+      expect(validate(manifest, fileList)).toBeUndefined();
+    });
   });
 });

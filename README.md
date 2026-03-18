@@ -35,7 +35,12 @@ If you would like to incorporate the validator into your own extension developme
 npm i @adobe/reactor-validator
 ```
 
-Once it has been installed as a dependency, import the validator and pass it an extension manifest object (this is the object exported from an `extension.json` file). If the value returned from the validator is `undefined`, then the extension appears to be well-formed; otherwise, the value will contain a description of the issue that was encountered. 
+Once it has been installed as a dependency, import the validator and pass it an extension manifest object (this is the object exported from an `extension.json` file). If the value returned from the validator is `undefined`, then the extension appears to be well-formed; otherwise, the value will contain a description of the issue that was encountered.
+
+**Supported import paths:** Only the documented entry points are supported. Deep imports (e.g. `@adobe/reactor-validator/lib/validate`) are not supported and will fail with `ERR_PACKAGE_PATH_NOT_EXPORTED`. Use one of these:
+
+- **Node:** `require('@adobe/reactor-validator')` — scans the filesystem and validates
+- **Browser or bundled:** `import validate from '@adobe/reactor-validator/validate'` — validates against a provided file list
 
 ```javascript
 const validate = require('@adobe/reactor-validator');
