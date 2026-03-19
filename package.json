@@ -1,8 +1,12 @@
 {
   "name": "@adobe/reactor-validator",
-  "version": "2.5.0",
+  "version": "3.0.0-beta.6",
   "description": "Validates a Tags extension package.",
   "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./validate": "./lib/validate.js"
+  },
   "bin": {
     "reactor-validator": "bin/index.js"
   },
